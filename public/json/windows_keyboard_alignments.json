@@ -1,0 +1,40 @@
+{
+    "title": "Windows Keyboard Alignments",
+    "rules": [
+        {
+            "description": "Swap @ and \"",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "quote",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": ["shift"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "2",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
